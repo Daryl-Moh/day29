@@ -19,9 +19,10 @@ public class Day29Application implements CommandLineRunner {
 		SpringApplication.run(Day29Application.class, args);
 	}
 	
+	// Use this method to print out in the command line
 	@Override
 	public void run(String... args){
-		//List<Document> results = tvshowSvc.countGenres();
+		// List<Document> results = tvShowService.countGenres();
 		List<Document> results = tvShowService.histogramOfRatings();
 
 		for (Document d: results)

@@ -24,7 +24,7 @@ public class TvShowService {
 
     public List<Document> countGenres(){
 
-        // $unwind
+        // $unwind 
         UnwindOperation unwindGenres = Aggregation.unwind(FIELD_GENRES);
 
         // $group
